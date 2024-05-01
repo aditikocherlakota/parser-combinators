@@ -1,6 +1,6 @@
 # parser-combinators
 
-A Clojure library designed to ... well, that part is up to you.
+Parsing library written in Clojure, inspired by Nate Young's Strange Loop talk
 
 ## Usage
 
