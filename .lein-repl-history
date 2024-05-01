@@ -1,0 +1,31 @@
+(require 'p.core :reload)
+(require 'core :reload)
+(require 'core_test :reload)
+(require 'parser-combinators.test.core-test :reload)
+(require 'parser-combinators.core-test :reload)
+foo 6 
+(foo 6 )
+(run (defn digit [] (token digit?)) 8)
+(require 'parser-combinators.core-test :reload)
+(foo 6 )
+(run (defn digit [] (token digit?)) 8)
+(require 'parser-combinators.core-test :reload)
+(run (defn digit [] (token digit?)) 8)
+(my-run (defn digit [] (token digit?)) 8)
+(require 'parser-combinators.core :reload)
+(my-run (defn digit [] (token digit?)) 8)
+(my-run (defn digit [] (token number?)) 8)
+(my-run number? 8)
+(my-run (token (number?)) 8)
+(my-run (token (number?)) [8])
+(my-run (token number? 8))
+parser-combinators.core/token
+(my-run (token number? 8))
+(my-run (token number?) 8)
+(my-run (token number?) [8])
+core-test
+parser-combinators.core/token
+(require 'parser-combinators.core :reload)
+lein run
+lein run p.core-test
+lein  p.core-test
